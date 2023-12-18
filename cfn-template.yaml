@@ -24,7 +24,7 @@ Resources:
     Type: AWS::EC2::SecurityGroup
     Properties:
       GroupDescription: Enable HTTP for Flask Web Server and SSH port to secure reach to my EC2
-      GroupName: osvaldo-roman-number-converter
+      GroupName: mehmet-roman-number-converter
       SecurityGroupIngress:
         - IpProtocol: tcp
           FromPort: 80
@@ -67,6 +67,6 @@ Resources:
 Outputs:
   WebsiteURL:
     Value: !Sub
-      - http://${PIA}
+      - http://${PIA}:8080
       - PIA: !GetAtt WebServerHost.PublicDnsName
     Description: Roman Numerals Converter Application URL
