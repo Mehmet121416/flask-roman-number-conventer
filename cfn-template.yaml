@@ -57,7 +57,7 @@ Resources:
         dnf install python3-pip -y
         pip3 install flask
         dnf install git -y
-        FOLDER="https://raw.githubusercontent.com/Mehmet121416/flask-roman-number-conventer/main/templates"
+        FOLDER="https://raw.githubusercontent.com/Mehmet121416/flask-roman-number-conventer/main"
         cd /home/ec2-user
         wget -P templates ${FOLDER}/templates/index.html
         wget -P templates ${FOLDER}/templates/result.html
